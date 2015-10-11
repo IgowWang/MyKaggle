@@ -1,14 +1,17 @@
-# MyKaggle
+ï»¿# MyKaggle
 
 ## 1. DigitRecognsizer
-    [ipython]()
->Ëã·¨£ºKNN£»RandomForestClassfication
->Ö÷ÒªÁ÷³Ì£º
- -Ô¤´¦Àí£ºnormalize
- -NµÄÑ¡Ôñ£º10
- -½µÎ¬´¦Àí£ºÍ¼ÏñÊı¾İÒ»¹²ÓĞ728¸öÌØÕ÷£¬Í¨¹ıK-FlodÑ°ÕÒ×î¼ÑµÄÎ¬¶È£¬Í¨¹ıÑ¡Ôñ2000¸öÊı¾İ»ñµÃµÄÎ¬¶ÈÑ¡ÔñÈçÏÂÍ¼ËùÊ¾£º
- ![]()
-> -Ëæ»úÉ­ÁÖ²ÎÊı£ºn_estimators=500;max_features="sqrt",±ÜÃâÁËÎ¬¶ÈÔì³ÉµÄÑµÁ·Ê±¼ä³¤
-|±È½Ï|KNN    |RandomForest|
+    [ipython](https://github.com/IgowWang/MyKaggle/blob/master/DigitRecognizer/DigitRecognsizer.ipynb)
+>ç®—æ³•ï¼šKNNï¼›RandomForestClassfication
+>ä¸»è¦æµç¨‹ï¼š
+>-é¢„å¤„ç†ï¼šnormalize
+>-Nçš„é€‰æ‹©ï¼š10
+>-é™ç»´å¤„ç†ï¼šå›¾åƒæ•°æ®ä¸€å…±æœ‰728ä¸ªç‰¹å¾ï¼Œé€šè¿‡K-Flodå¯»æ‰¾æœ€ä½³çš„ç»´åº¦ï¼Œé€šè¿‡é€‰æ‹©2000ä¸ªæ•°æ®è·å¾—çš„ç»´åº¦é€‰æ‹©å¦‚ä¸‹>>å›¾æ‰€ç¤ºï¼š
+>![](https://github.com/IgowWang/MyKaggle/blob/master/DigitRecognizer/data/dim.png)
+> -éšæœºæ£®æ—å‚æ•°ï¼šn_estimators=500;max_features="sqrt",é¿å…äº†ç»´åº¦é€ æˆçš„è®­ç»ƒæ—¶é—´é•¿
+|æ¯”è¾ƒ|KNN    |RandomForest|
 |----|:-----:|:-----:|
-|Kaggle¾«È·¶È|0.96886|0.968|
+|Kaggleç²¾ç¡®åº¦|0.96886|0.968|
+
+ 
+
