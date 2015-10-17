@@ -2,12 +2,12 @@ __author__ = 'Igor'
 import os
 import numpy as np
 from pandas.io.parsers import read_csv
-from sklearn.preprocessing import MinMaxScaler
 from sklearn.utils import shuffle
 from lasagne import layers
 from lasagne.updates import nesterov_momentum  # 基于牛顿方程式的随机梯度下降
 from nolearn.lasagne import NeuralNet
 import matplotlib.pyplot as plt
+import pickle
 
 F_TRAIN = 'data/training.csv'
 F_TEST = 'data/test.csv'
@@ -75,6 +75,9 @@ net1 = NeuralNet(
 )
 
 net1.fit(X, y)
+with open("data/net1.pickle", 'wb') as f:
+    pickle.dump(net1, f, -1)
+f.close()
 
 # net1保存了训练中的结果
 train_loss = np.array([i["train_loss"] for i in net1.train_history_])
@@ -87,7 +90,6 @@ plt.xlabel("epoch")
 plt.ylabel("loss")
 plt.ylim(1e-3, 1e-2)
 plt.yscale("log")
-plt.show()
 
 
 def plot_sample(x, y, axis):
@@ -109,5 +111,3 @@ for i in range(16):
     # subplot(行，列，索引)，即创建了一个4×4 16张子图，第三个参数是索引，按行
     ax = fig.add_subplot(4, 4, i + 1, xticks=[], yticks=[])
     plot_sample(X[i], y_pred[i], ax)
-
-plt.show()
