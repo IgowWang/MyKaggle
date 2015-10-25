@@ -9,7 +9,6 @@ from nolearn.lasagne import NeuralNet
 import matplotlib.pyplot as plt
 import pickle
 
-
 F_TRAIN = 'data/training.csv'
 F_TEST = 'data/test.csv'
 
